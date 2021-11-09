@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class fees {
+    public static void main(String[]args)
+    {int orifree;
+        int fd;
+      double  tfee=0;
+      System.out.println("enter original fee");
+        Scanner sc=new Scanner(System.in);
+       orifree=sc.nextInt();
+       fd=sc.nextInt();
+      
+       if(orifree>=50000)
+       {
+           if(fd>=1000)
+           {
+               tfee=orifree*.05;
+               tfee=orifree*.15;
+
+
+           }
+           System.out.println(tfee);
+       }
+
+    }
+    
+}
